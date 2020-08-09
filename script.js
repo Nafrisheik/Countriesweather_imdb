@@ -3,7 +3,7 @@ var countryData;
 function getWeather(event) {
   let cityname = countryData[event.srcElement.id].capital;
   var urlData = fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       cityname +
       "&appid=d723669029da1e6bbb5c45c879900b55"
   );
