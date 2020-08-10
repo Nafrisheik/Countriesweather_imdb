@@ -39,13 +39,13 @@ async function getMovie() {
     div2[i].className = "card-body";
     h61[i] = document.createElement("h6");
     h61[i].className = "card-text";
-    h61[i].innerText = "Year:" + data[i].Year;
+    h61[i].innerText = "Year: " + data[i].Year;
     h62[i] = document.createElement("h6");
     h62[i].className = "card-text";
-    h62[i].innerText = "Type:" + data[i].Type;
+    h62[i].innerText = data[i].Type;
     h63[i] = document.createElement("h6");
     h63[i].className = "card-text";
-    h63[i].innerText = "Imdb ID:" + data[i].imdbID;
+    h63[i].innerText = "Imdb ID: " + data[i].imdbID;
     div2[i].append(h61[i], h62[i], h63[i]);
     div1[i].append(heading[i], image[i], div2[i]);
     div.appendChild(div1[i]);
