@@ -67,7 +67,10 @@ urlData
       div1[i].append(heading[i], image[i], div2[i], button[i]);
       div.appendChild(div1[i]);
     }
-    document.body.appendChild(div);
+        var container= document.createElement("div");
+        container.className="container";
+        container.appendChild(div);
+        document.body.appendChild(container);
   })
   .catch((error) => {
     console.log(error);
